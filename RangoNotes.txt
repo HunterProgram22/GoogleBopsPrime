@@ -1,0 +1,20 @@
+One category contains many pages, but one page is assigned to one category
+
+Category Model
+FIELD TYPE
+name = CharField
+views = IntegerField
+likes = IntegerField
+
+Page Model
+FIELD 	TYPE
+category = ForeignKey
+title = CharField
+url = URLField
+views = IntegerField
+
+User Model
+TODO
+
+
+
