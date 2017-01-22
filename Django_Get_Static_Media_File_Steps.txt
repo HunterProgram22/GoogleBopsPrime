@@ -1,0 +1,11 @@
+1. Take static media file and place into project's static directory (this is
+	the directory specified in STATICFILES_DIRS list within settings.py)
+2. Add reference to the file to a template (i.e. add <img /> tag for image)
+3. Use {% load static files %} and {% static "<filename>" %} commands within
+	the template to access the static files. Replace file name with path
+	to the resource
+
+Media Files
+1. Place file within media directory specified in MEDIA_ROOT
+2. Link to the media file in a template through {{ MEDIA_URL }} context variable.
+	(i.e. <img src = "{{ MEDIA_URL }}cat.jpg"> )

@@ -1,0 +1,9 @@
+1. Create template and save in templates directory
+	* May use template variables - {{ variable name }}; or template tags
+2. Find or create new view in application's views.py
+3. Add view specific logic, if any, to the view. (i.e. extract data from database)
+4. Within the view, construct a dictionary object to pass to template engine
+	as part of the template's context
+5. Make use of render - render(request, 'template file', context=context_dict)
+6. Map view to a URL by modifying project's urls.py file and application
+	specific urls.py file if you have one
