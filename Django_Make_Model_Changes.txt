@@ -1,0 +1,5 @@
+1. Change models in models.py
+
+2. Run python manage.py make migrations to create migrations for those changes
+
+3. Run python manage.py migrate to apply those changes to the database
