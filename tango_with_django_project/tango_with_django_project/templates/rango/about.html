@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>Rango</title>
+    </head>
+    
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            This is the page about who made this site <br />
+            <strong>{{ aboutme }}</strong><br />
+        </div>
+        <h2>Who we are</h2>
+        <div>
+            <strong>{{ abouthunter }}</strong><br />
+        </div>
+        <div>
+            <a href ="/rango/">Index</a><br />
+            <img src="{% static "images/Justin.jpg" %}"
+            alt = "Picture of Justin" />
+        </div>
+        <div>
+            <h3> This is a picture of a dog! </h3>
+            <img src = "{{ MEDIA_URL }}dog.jpg" atl = "Picture of dog" />
+        </div>
+    </body>
+    
+</html>
