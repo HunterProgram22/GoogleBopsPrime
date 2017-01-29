@@ -1,0 +1,14 @@
+1. Setting up your Database
+	First tell Django about database intend to use in DATABASES in settings.py
+	Also register any models in admin.py to make them accessible via admin interface
+
+2. Adding a Model
+	a. Create new model in applications models.py
+	b. Update admin.py to include and register new model(s)
+	c. Perform migration PS> python manage.py makemigrations <app_name>
+	d. Apply the changes PS> python manage.py migrate
+	e. Create/edit population script for new model(s)
+
+3. Delete Database - tasks to take before deleting
+	a. Migrate database
+	b. Create new administrative account as superuse
